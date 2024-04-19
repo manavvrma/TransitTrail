@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'),
+        url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('/fonts/OpenSans-Regular.woff') format('woff'),
+        url('/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    padding-bottom: 10px;
+}
+
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+/* Body */
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    line-height: 1.6em;
+    background-color: #181818;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #AAAAAA;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+}
+
+/* Headings and Paragraphs */
+h1, h2, h4 {
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Images */
+img {
+    width: 100%;
+}
+
+/* Header */
+header {
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #212121;
+}
+
+.navbar .flex {
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+#logo a:hover {
+    color: #FFFFFF;
+}
+
+/* Main */
+.main small {
+    line-height: 0em;
+}
+
+.main .flex {
+    padding: 0 80px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+/* App Name Section */
+#app-name h1 {
+    margin-bottom: 0px;
+}
+
+#app-name h4 {
+    margin-top: 5px;
+    color: #AAAAAA;
+}
+
+/* Form */
+#form {
+    background-color: #212121;
+    border: 0.5px solid #3D3D3D;
+    border-radius: 5px;
+}
+
+#form-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 5px;
+}
+
+/* Location Fields */
+#location-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.locations, .start-location {
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;    
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+
+/* Textboxes */
+.tb {
+    background-color: #3D3D3D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+    width: 180px;
+}
+
+.tb:focus {
+    border: none;
+    overflow: auto;
+    outline: none;
+}
+
+/* Placeholder Text */
+::placeholder {
+    color: #AAAAAA;
+}
+
+/* Dropdown Box */
+.db {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.db .dropbox {
+    background-color: #3D3D3D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.db .dropbox:hover {
+    cursor: pointer;
+    transition: 0s;
+}
+
+/* Buttons */
+.button {
+    background-color: #3D3D3D;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.button:active {
+    cursor: pointer;
+    background-color: #AAAAAA;
+}
+
+/* Error Message */
+.error-message {
+    color: #DC143C;
+    font-size: 14px;
+}
+
+/* Results Section */
+#results {
+    background-color: #212121;
+    border: 0.5px solid #3D3D3D;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-radius: 5px;
+}
+
+/* Results List */
+#results-list {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+
+#results-list p {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 45%;
+    min-width: 768px;
+    max-width: 850px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/* Flex Container */
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818
+}
